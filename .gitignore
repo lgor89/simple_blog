@@ -1,0 +1,16 @@
+.idea/
+/.bundle
+db/*.sqlite3
+.sass-cache/
+tmp/*
+!tmp
+log/*.log
+!log
+config/database.yml
+public/assets/
+public/maintenance.html
+!public/images/
+public/images/*
+public/images/**/*
+.DS_Store
+!.gitkeep
