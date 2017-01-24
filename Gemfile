@@ -48,4 +48,4 @@ group :production do
 end
 
 # for Heroku production say the Ruby version
-ruby '2.3.1'
+ruby '2.3.0'
