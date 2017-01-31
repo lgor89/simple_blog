@@ -24,6 +24,7 @@ gem 'ckeditor', '~> 4.2', '>= 4.2.2'
 gem 'non-stupid-digest-assets', '~> 1.0.4'
 gem 'carrierwave'
 gem 'mini_magick'
+gem 'devise'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
