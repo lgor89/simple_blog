@@ -20,8 +20,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'simple_form', '~>3.2'
 gem 'bootstrap-sass', '~>3.3'
-gem 'ckeditor' , '~> 4.1'
-gem 'non-stupid-digest-assets', '~> 1.0.4'
+gem 'ckeditor', '~> 4.2', '>= 4.2.2'
+#gem 'non-stupid-digest-assets', '~> 1.0.4'
 gem 'carrierwave'
 gem 'mini_magick'
 # Use ActiveModel has_secure_password
