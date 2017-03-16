@@ -10,4 +10,4 @@ This blog have same features like this:
 
 
 #### Coments:
-*Please leave your comments, it's very important for me!
+*Please leave your comments, it's very important for me!*
