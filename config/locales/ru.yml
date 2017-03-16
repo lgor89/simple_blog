@@ -1,0 +1,14 @@
+ru:
+  content:
+    more: "Подробнее..."
+  menu:
+    login: "Логин"
+    post: "Новый пост"
+    account: "Мой профиль"
+    logout: "Выход"
+    home: "Главная"
+    new_article: "Добавить статью"
+    languages:
+      lang: "Язык"
+      ru: "Русский"
+      en: "English"

@@ -6,6 +6,7 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
    root 'posts#index'
+  get 'change_locale/:locale', to: 'settings#change_locale', as: :change_locale
   resources :posts
 
 

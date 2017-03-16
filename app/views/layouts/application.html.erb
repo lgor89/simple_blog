@@ -14,6 +14,9 @@
   <div class="container-fluid"></div>
 <%= yield %>
 </div>
-
+<%#= debug(params) if Rails.env.development? %>
+<%#= debug(controller) if Rails.env.development? %>
+<%#= debug(request) if Rails.env.development? %>
+<%#= debug(response) if Rails.env.development? %>
 </body>
 </html>

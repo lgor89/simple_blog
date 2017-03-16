@@ -17,7 +17,8 @@ gem 'jquery-rails'
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
-
+gem 'rails-i18n', '~> 4.0.0'
+gem 'globalize', '>= 5.0.1'
 gem 'simple_form', '~>3.2'
 gem 'bootstrap-sass', '~>3.3'
 gem 'ckeditor', '~> 4.2', '>= 4.2.2'
@@ -55,4 +56,4 @@ group :production do
 end
 
 # for Heroku production say the Ruby version
-ruby '2.3.0'
+ruby '2.3.1'

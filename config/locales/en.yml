@@ -18,6 +18,17 @@
 #
 # To learn more, please read the Rails Internationalization guide
 # available at http://guides.rubyonrails.org/i18n.html.
-
 en:
-  hello: "Hello world"
+  content:
+    more: "Read more"
+  menu:
+    login: "Login"
+    post: "New Post"
+    account: "My Account"
+    logout: "Logout"
+    home: "Home"
+    new_article: "Add article"
+    languages:
+      lang: "Language"
+      ru: "Русский"
+      en: "English"
