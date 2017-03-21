@@ -19,6 +19,8 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'rails-i18n', '~> 4.0.0'
 gem 'globalize', '>= 5.0.1'
+gem 'figaro'
+gem 'mail_form'
 gem 'simple_form', '~>3.2'
 gem 'bootstrap-sass', '~>3.3'
 gem 'ckeditor', '~> 4.2', '>= 4.2.2'

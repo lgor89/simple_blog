@@ -14,3 +14,5 @@ public/images/*
 public/images/**/*
 .DS_Store
 !.gitkeep
+# Ignore application configuration
+/config/application.yml

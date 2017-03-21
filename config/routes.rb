@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources 'contacts', only: [:new,:create]
+
   devise_for :admins
   mount Ckeditor::Engine => '/ckeditor'
   # The priority is based upon order of creation: first created -> highest priority.
