@@ -1,2 +1,5 @@
-<h1>Contacts#create</h1>
-<p>Find me in app/views/contacts/create.html.erb</p>
+<div class="container">
+  <h1> <%= t('contact.thanks')%>, <%= @contact.name %>!</h1>
+  <p><%= t('contact.returnText')%></p>
+  <%= link_to t('contact.returnButton'), root_url, class: 'btn btn-success' %>
+</div>

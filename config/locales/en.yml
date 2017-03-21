@@ -23,6 +23,7 @@ en:
     more: "Read more"
   menu:
     login: "Login"
+    send: "Send"
     post: "New Post"
     account: "My Account"
     logout: "Logout"

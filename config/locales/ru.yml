@@ -3,6 +3,7 @@ ru:
     more: "Подробнее..."
   menu:
     login: "Логин"
+    send: "Послать"
     post: "Новый пост"
     account: "Мой профиль"
     logout: "Выход"
