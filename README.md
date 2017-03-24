@@ -6,7 +6,7 @@ This blog have same features like this:
   - Validates
   - Ckeditor for editting posts
   - Localization (En,Ru)
-  - Send message to user email, when he create a new post
+  - Add background job,that sending message to user email, when he create a new post
 
 
 
