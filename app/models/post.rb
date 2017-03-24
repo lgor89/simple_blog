@@ -4,4 +4,5 @@ class Post < ActiveRecord::Base
   #This validates presence of body
   validates :body, presence: true
   translates :title, :body
+
 end

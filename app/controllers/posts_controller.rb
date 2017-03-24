@@ -14,14 +14,18 @@ class PostsController < ApplicationController
 
   # Create action saves the post into database
   def create
+
     @post = Post.new(post_params)
+
     if @post.save
+      SendEmailJob.set(wait: 10.seconds).perform_later(current_admin)
       flash[:notice] = "Successfully created post!"
       redirect_to post_path(@post)
     else
       flash[:alert] = "Error creating new post!"
       render :new
     end
+
   end
 
   # Edit action retrives the post and renders the edit page

@@ -10,6 +10,8 @@ Rails.application.routes.draw do
    root 'posts#index'
   get 'change_locale/:locale', to: 'settings#change_locale', as: :change_locale
   resources :posts
+  require 'sidekiq/web'
+  mount Sidekiq::Web => '/sidekiq'
 
 
   # Example of regular route:

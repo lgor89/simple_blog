@@ -86,6 +86,7 @@ Rails.application.configure do
       address: 'smtp.gmail.com',
       port: 587,
       domain: 'simple-blog-igor-24.herokuapp.com',
+      #https://accounts.google.com/DisplayUnlockCaptcha for unlocking google account access
       authentication: :plain,
       enable_starttls_auto: true,
       user_name: ENV['GMAIL_USERNAME'],
