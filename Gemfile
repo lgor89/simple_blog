@@ -6,7 +6,7 @@ gem 'pg', '~> 0.15'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
-gem 'uglifier', '>= 1.3.0'
+gem 'uglifier'
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.1.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
@@ -24,6 +24,8 @@ gem 'mail_form'
 gem 'sidekiq', '~> 4.2', '>= 4.2.10'
 gem 'redis', '~> 3.3', '>= 3.3.3'
 gem 'delayed_job_active_record'
+gem 'will_paginate'
+gem 'bootstrap-will_paginate'
 gem 'simple_form', '~>3.2'
 gem 'bootstrap-sass', '~>3.3'
 gem 'ckeditor', '~> 4.2', '>= 4.2.2'

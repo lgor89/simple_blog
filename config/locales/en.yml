@@ -19,6 +19,29 @@
 # To learn more, please read the Rails Internationalization guide
 # available at http://guides.rubyonrails.org/i18n.html.
 en:
+  forms:
+    fields:
+      fullname: "Input full name"
+      email: "Input email"
+      message: "Message"
+    buttons:
+      submit: "Send"
+      reset: "Reset"
+  contactUs:
+    title: "Title"
+    description: "description"
+  contact:
+    thanks: " "
+    returnText: " "
+    returnButton: "Return"
+  edit:
+    show: "Show"
+    edit: "Edit"
+    del: "Delete"
+  will_paginate:
+    previous_label: "&#8592; Previous"
+    next_label: "Next &#8594;"
+    page_gap: "&hellip;"
   content:
     more: "Read more"
   menu:

@@ -12,13 +12,15 @@
           <div class="text-center">
             <%= link_to t('content.more'), post_path(post) %>
           </div>
+
           <% if admin_signed_in? %>
-              <%= link_to "Show", post_path(post), class: "btn btn-primary" %>
-              <%= link_to "Edit", edit_post_path(post), class: "btn btn-default" %>
-              <%= link_to "Delete", post_path(post), class: "btn btn-danger", data: {:confirm => "Are you sure?"}, method: :delete %>
+              <%= link_to t('edit.show'), post_path(post), class: "btn btn-primary" %>
+              <%= link_to t('edit.edit'), edit_post_path(post), class: "btn btn-default" %>
+              <%= link_to t('edit.del'), post_path(post), class: "btn btn-danger", data: {:confirm => "Are you sure?"}, method: :delete %>
           <% end %>
           <hr />
         </div>
     <% end %>
+    <%= will_paginate @posts %>
   </div>
 </div>

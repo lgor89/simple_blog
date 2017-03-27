@@ -4,7 +4,8 @@ class PostsController < ApplicationController
   before_action :authenticate_admin!, except: [:index, :show]
   # Index action to render all posts
   def index
-    @posts = Post.all
+    # @posts = Post.all
+    @posts = Post.paginate(:page => params[:page])
   end
 
   # New action for creating post
@@ -20,7 +21,7 @@ class PostsController < ApplicationController
     if @post.save
       SendEmailJob.set(wait: 10.seconds).perform_later(current_admin)
       flash[:notice] = "Successfully created post!"
-      redirect_to post_path(@post)
+      redirect_to root_path(@post)
     else
       flash[:alert] = "Error creating new post!"
       render :new
@@ -50,6 +51,7 @@ class PostsController < ApplicationController
   # The destroy action removes the post permanently from the database
   def destroy
     if @post.destroy
+      SendWhenDestroyEmailJob.set(wait: 10.seconds).perform_later(current_admin,Post.first)
       flash[:notice] = "Successfully deleted post!"
       redirect_to posts_path
     else

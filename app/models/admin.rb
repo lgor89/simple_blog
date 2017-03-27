@@ -6,6 +6,6 @@ class Admin < ActiveRecord::Base
 
   #mount avatar uploader
   mount_uploader :avatar, AvatarUploader
-
+  has_many :posts
 end
 
