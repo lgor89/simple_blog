@@ -4,7 +4,8 @@ class PostsController < ApplicationController
   before_action :authenticate_admin!, except: [:index, :show]
   # Index action to render all posts
   def index
-    @posts = Post.all
+    # @posts = Post.all
+    @posts = Post.paginate(:page => params[:page])
   end
 
   # New action for creating post

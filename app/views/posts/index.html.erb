@@ -12,6 +12,7 @@
           <div class="text-center">
             <%= link_to t('content.more'), post_path(post) %>
           </div>
+
           <% if admin_signed_in? %>
               <%= link_to "Show", post_path(post), class: "btn btn-primary" %>
               <%= link_to "Edit", edit_post_path(post), class: "btn btn-default" %>
@@ -20,5 +21,6 @@
           <hr />
         </div>
     <% end %>
+    <%= will_paginate @posts %>
   </div>
 </div>
