@@ -1,4 +1,23 @@
 ru:
+  forms:
+    fields:
+      fullname: "Введите полное имя"
+      email: "Адрес почты"
+      message: "Текст сообщения"
+    buttons:
+      submit: "Отправить"
+      reset: "Сбросить"
+  contactUs:
+    title: "Заголовок"
+    description: "описание"
+  contact:
+    thanks: " "
+    returnText: " "
+    returnButton: "Return"
+  edit:
+    show: "Смотреть"
+    edit: "Редактировать"
+    del: "Удалить"
   will_paginate:
     previous_label: "&#8592; Пред."
     next_label: "След. &#8594;"

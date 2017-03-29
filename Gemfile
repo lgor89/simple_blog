@@ -6,7 +6,7 @@ gem 'pg', '~> 0.15'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
-gem 'uglifier', '>= 1.3.0'
+gem 'uglifier'
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.1.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
@@ -21,6 +21,7 @@ gem 'rails-i18n', '~> 4.0.0'
 gem 'globalize', '>= 5.0.1'
 gem 'figaro'
 gem 'mail_form'
+gem 'rspec-rails'
 gem 'sidekiq', '~> 4.2', '>= 4.2.10'
 gem 'redis', '~> 3.3', '>= 3.3.3'
 gem 'delayed_job_active_record'
@@ -33,6 +34,7 @@ gem 'non-stupid-digest-assets', '~> 1.0.4'
 gem 'carrierwave'
 gem 'mini_magick'
 gem 'devise'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -56,6 +58,8 @@ group :test do
   gem 'minitest-reporters', '1.0.5'
   gem 'mini_backtrace',     '0.1.3'
   gem 'guard-minitest', '2.3.1'
+  gem 'database_cleaner'
+  gem 'capybara'
 end
 
 group :production do
